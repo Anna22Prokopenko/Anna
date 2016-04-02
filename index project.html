@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>First page</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<!--<meta http-equiv="refresh" content="5; Url=http://brainacad.com/"/>-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="cnt">
+		<div class="header" style="height:100px; outline:1px solid red;">
+			<img src="img/BA_new_icon.png" alt="Logo" title="Logo"/>
+			<a href=#slider>Слайдер товаров</a>
+			<a href=#catalog>Каталог</a>
+			<a href=#info>О нас</a>
+			<a href=#contact>Контакты</a>
+		</div>
+		<div  class="black" style="height:500px; background: #030303;">
+		</div>
+		<div id="slider" class="Promo" style="height:500px; outline:1px solid red;">
+			<h2>Slider</h2>
+			<h3>Лучшие товары</h3>
+			<p>Промо текст</p>
+			<div class="slide">
+				<a href="#" class="item">
+					<img alt="First" src="img/1.jpeg"/></br>
+					<span class="firstitem">Lorem Ipsum</span>
+				</a> 
+				<a class="item">
+					<img alt="First" src="img/1.jpeg"/></br>
+					<span class="firstitem">Lorem Ipsum</span>
+				</a> 
+				<a class="item">
+					<img alt="First" src="img/1.jpeg"/></br>
+					<span class="firstitem">Lorem Ipsum</span>
+				</a> 
+				<a class="item">
+					<img alt="First" src="img/1.jpeg"/></br>
+					<span class="firstitem">Lorem Ipsum</span>
+				</a> 
+				<div class="clearfix">
+				</div>
+			</div>
+			<div class="pagination">
+				<span class="item"></span>
+				<span class="item"></span>
+				<span class="item"></span>
+			</div>
+		</div>
+		<div id="catalog" class="Сatalog" style="height:500px; outline:1px solid red; background: #6dbfa3;">
+			<h2>Catalog</h2>
+			<table>
+				<tr>
+					<td style="outline:1px solid red;">Наименование</td>
+					<td style="outline:1px solid red;">+</td>
+					<td style="outline:1px solid red;">-</td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Беговая дорожка Vigor XPL700</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Беговая дорожка FitLogic ET1403</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Беговая дорожка Torneo Inita (T-150)</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Велотренажер магнитный Torneo Nova (B-225)</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Велотренажер EnergyFIT BC1200</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Велотренажер EnergyFIT BC1300</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;"> Массажный стол раскладной Life Gear Blanche 55700 (вишневый)</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Массажный стол 3-х секционный (дерев. рама) HouseFit кремовый (HY-30110B)</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+				<tr>
+					<td style="outline:1px solid red;">Массажный стол USA Style (SS-WT-008 A)</td>
+					<td style="outline:1px solid red;"></td>
+					<td style="outline:1px solid red;"></td>
+				</tr>
+			</table>
+		</div>
+		<div id="info" class="About us" style="height:500px; outline:1px solid red;">
+			<h2>About us</h2>
+		</div>
+		<div id="contact" class="Сontacts" style="outline:1px solid red; background: #6dbfa3;">
+			<h2>Сontacts</h2>
+			<form>
+				<h2>Форма обратной связи</h2>
+				<p>Здесь вы можете оставить нам сообщение</p>
+				<div>
+					<label for="name">ВАШЕ ИМЯ:</label> <input type="text" id="name"/> 
+				</div>
+				<div>
+					<label for="password">ВАШ E-MAIL:</label> <input type="password" id="password"/> 
+				</div>
+				<p>Выберите тему для письма и напишите сообщение</p>
+				<div>
+					<label for="select">ТЕМА ПИСЬМА:</label> 
+					<select>
+							<option>-выбрать тему-</option>
+							<option>2</option>
+							<option>3</option>
+					<select/> 
+				</div>
+				<div>
+					<label for="textarea">СООБЩЕНИЕ:</label> 
+					<textarea>
+					
+					</textarea>
+				</div>
+				<p>Введите капчу и нажмите "отправить"</p>
+				<div>
+					<label for="text">9+18=</label> <input type="text" id="text"/> 
+				</div>
+				<input type="button" value="ОТПРАВИТЬ"/>
+				<input type="reset" value="ОЧИСТИТЬ"/>
+			</form>
+		</div>
+		</div>	
+	</body>
+	
+</html>
