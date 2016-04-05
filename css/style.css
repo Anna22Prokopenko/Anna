@@ -1,30 +1,273 @@
 .cnt {
 	width: 768px;
 	margin: 0 auto;
-	background: #f3f2e7;
+	background: #d6d7e4;
 }
 .slide .item img {
 	width: 150px;
 	display: inline-block;
+	border: 1px solid #909093;
 }
 .slide .item {
 	width: 150px;
 	display: block;
 	float: left;
+	padding: 20px;
+	
 	
 }
-.firstitem {
-	color: #d7632f;
-}
+
+
 .pagination .item {
 	background: url("../img/sprite2.png") 0 0 no-repeat; 
 	display: inline-block;
 	width: 13px;
 	height: 13px;
 }
+.item1 {
+	background: url("../img/sprite2.png") 0px -16px no-repeat; 
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: -2.5px;
+}
+.item2 {
+	background: url("../img/sprite2.png") -17px -16px no-repeat; 
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: -2.5px;
+}
 .clearfix {
 	clear: both;
 }
-.slide {
-	border: 4px solid red;
+.clearfix2 {
+	clear: both;
+}
+.form {
+	width: 400px;
+	margin: 0 auto;
+	background: #e5e5e5;
+	padding: 20px;
+}
+.form h2 {
+	text-align: center;
+	color: black;
+}
+.form p {
+	text-align: left;
+}
+.name {clear:both; text-align:right; line-height:20px; margin-bottom:5px; margin-top:5px;}
+
+label {float:left; padding-right:20px; font: normal 13px/100% Verdana, Tahoma, sans-serif;}
+
+.main {float:left}
+
+.name1 {clear:both; text-align:right; line-height:20px; margin-bottom:5px; margin-top:5px;}
+
+.main1 {float:left}
+
+.links {
+	text-align: right;
+	background: #fcfcfc;
+	width: 768px;
+	height: 25px;
+	position: relative;
+	top: 45px;
+}
+.links a {
+	vertical-align: middle;
+	margin-right: 30px;
+}
+		
+.logo {
+	float:left;
+	position: absolute;
+	left: 30px;
+	top: 30px;
+	background: #fcfcfc;
+	width: 183px;
+	height: 73px;
+	z-index: +1;
+	padding: 3px;
+}
+.logo img {
+	vertical-align: middle;
+	padding: 5px;
+}
+.header {
+	position:relative;
+	height: 65px;
+	background: #b3aeae;
+}
+.text {
+	width: 300px;
+	height: 300px;
+	margin-left: 30px;
+	margin-top: 50px;
+	float:left;
+	color: #f6f6f8;
+}
+.company {
+	width: 400px;
+	height: 250px;
+	background: #b3aeae;
+	float:right;
+	margin-right: 30px;
+	margin-top: 50px;
+}
+.black {
+	height:350px; 
+	background: #030303;
+}
+.promo {
+	text-align: center;
+	height: 280px;
+}
+.promo h2 {
+	margin-bottom: -15px;
+}
+.promo h3 {
+	margin-bottom: -10px;
+}
+.promo p {
+	margin-bottom: -5px;
+}
+.catalog {
+	height:500px;
+	background: #616267;
+	position: relative;
+}
+.catalog h2 {
+	color: #f6f6f8;
+	text-align: center;
+}
+table {
+	width: 350px;
+	height: 250px;
+	margin-left: 70px;
+	border: 2px solid #ceced0;
+	border-collapse: collapse;
+	color: #f6f6f8;
+}
+td,th {
+	border: 2px solid #ceced0;
+	height: 30px;
+}
+th {
+	background-color: #fefefe;
+	color: #616267;
+}
+td {
+	padding-left: 15px;
+}
+.size {
+	width: 20px;
+}
+.viewer {
+	width: 300px;
+	height: 410px;
+	background: #d6d7e4;
+	position: absolute;
+	right: 30px;
+	top: 50px;
+}
+.blue {
+	width: 50px;
+	height: 250px;
+	background: #007db6;
+	position: absolute;
+	left: 0px;
+	top: 50px;
+}
+.aboutus {
+	height: 400px;
+	padding: 30px;
+	text-align: justify;
+}
+.aboutus h2 {
+	text-align: center;
+}
+.contacts {
+	height: 600px;
+	background: #616267;
+}
+.contacts h2 {
+	color: #f6f6f8;
+	text-align: center;
+}
+.footer {
+	width: 100%; 
+	height: 150px; 
+	background: #030303; 
+	position: relative;
+	
+}
+.whiteline {
+	height: 20px;
+	background: #fcfcfc;
+}
+.grayline {
+	height: 10px;
+	background: #007db6;
+}
+.socseti {
+	
+}
+.socseti .twitter {
+	width: 40px; 
+	height: 40px;
+	position: relative;
+	left: 30px;
+	top: 30px;
+}
+.socseti .facebook {
+	width: 40px; 
+	height: 40px;
+	position: relative;
+	left: 50px;
+	top: 30px;
+	
+}
+.socseti .vk {
+	width: 40px; 
+	height: 40px;
+	position: relative;
+	left: 70px;
+	top: 30px;
+	
+}
+.footer p {
+	color: #fcfcfc;
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-size: 13px; 
+}
+.anchors {
+	position: absolute;
+	top: 70px;
+	right: 30px;
+}
+.anchors a {
+	padding: 10px;
+}
+a:link {
+	color: #35e9d6;   /*ЗЕЛЕНЫЙ*/
+	text-decoration: none;
+}
+ a:active {
+	color: #616267;  /*СЕРЫЙ*/
+	text-decoration: none;
+}
+ a:visited {
+	color: #007db6;    /*СИНИЙ*/
+	text-decoration: none;
+}
+a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+	font-size: 18px;
 }

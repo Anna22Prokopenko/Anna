@@ -9,33 +9,43 @@
 	</head>
 	<body>
 		<div class="cnt">
-		<div class="header" style="height:100px; outline:1px solid red;">
-			<img src="img/BA_new_icon.png" alt="Logo" title="Logo"/>
-			<a href=#slider>Слайдер товаров</a>
-			<a href=#catalog>Каталог</a>
-			<a href=#info>О нас</a>
-			<a href=#contact>Контакты</a>
+		<div class="header">
+			<div class="logo">
+				<img src="img/BA_new_icon.png" alt="Logo" title="Logo"/>
+			</div>
+			<div class="clearfix"></div>
+			<div class="links">
+				<a href=#slider>Слайдер товаров</a>
+				<a href=#catalog>Каталог</a>
+				<a href=#info>О нас</a>
+				<a href=#contact>Контакты</a>
+			</div>
 		</div>
-		<div  class="black" style="height:500px; background: #030303;">
+		<div  class="black">
+			<div class="text">
+				<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+				<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+			<div class="company"></div>
 		</div>
-		<div id="slider" class="Promo" style="height:500px; outline:1px solid red;">
+		<div id="slider" class="promo">
 			<h2>Slider</h2>
 			<h3>Лучшие товары</h3>
-			<p>Промо текст</p>
+			<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
 			<div class="slide">
 				<a href="#" class="item">
 					<img alt="First" src="img/1.jpeg"/></br>
 					<span class="firstitem">Lorem Ipsum</span>
 				</a> 
-				<a class="item">
+				<a href="#" class="item">
 					<img alt="First" src="img/1.jpeg"/></br>
 					<span class="firstitem">Lorem Ipsum</span>
 				</a> 
-				<a class="item">
+				<a href="#" class="item">
 					<img alt="First" src="img/1.jpeg"/></br>
 					<span class="firstitem">Lorem Ipsum</span>
 				</a> 
-				<a class="item">
+				<a href="#" class="item">
 					<img alt="First" src="img/1.jpeg"/></br>
 					<span class="firstitem">Lorem Ipsum</span>
 				</a> 
@@ -48,77 +58,104 @@
 				<span class="item"></span>
 			</div>
 		</div>
-		<div id="catalog" class="Сatalog" style="height:500px; outline:1px solid red; background: #6dbfa3;">
+		<div id="catalog" class="catalog">
 			<h2>Catalog</h2>
 			<table>
 				<tr>
-					<td style="outline:1px solid red;">Наименование</td>
-					<td style="outline:1px solid red;">+</td>
-					<td style="outline:1px solid red;">-</td>
+					<th>Наименование</th>
+					<th class="size"><span class="item1"></span></th>
+					<th class="size"><span class="item2"></span></th>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Беговая дорожка Vigor XPL700</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Беговая дорожка Vigor XPL700</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Беговая дорожка FitLogic ET1403</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Беговая дорожка FitLogic ET1403</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Беговая дорожка Torneo Inita (T-150)</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Беговая дорожка Torneo Inita (T-150)</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Велотренажер магнитный Torneo Nova (B-225)</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Велотренажер магнитный Torneo Nova (B-225)</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Велотренажер EnergyFIT BC1200</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Велотренажер EnergyFIT BC1200</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Велотренажер EnergyFIT BC1300</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Велотренажер EnergyFIT BC1300</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;"> Массажный стол раскладной Life Gear Blanche 55700 (вишневый)</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td> Массажный стол раскладной Life Gear Blanche 55700 (вишневый)</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Массажный стол 3-х секционный (дерев. рама) HouseFit кремовый (HY-30110B)</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Массажный стол 3-х секционный (дерев. рама) HouseFit кремовый (HY-30110B)</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 				<tr>
-					<td style="outline:1px solid red;">Массажный стол USA Style (SS-WT-008 A)</td>
-					<td style="outline:1px solid red;"></td>
-					<td style="outline:1px solid red;"></td>
+					<td>Массажный стол USA Style (SS-WT-008 A)</td>
+					<td class="size"><span class="item1"></span></td>
+					<td class="size"><span class="item2"></span></td>
 				</tr>
 			</table>
+			<div class="viewer"></div>
+			<div class="blue"></div>
 		</div>
-		<div id="info" class="About us" style="height:500px; outline:1px solid red;">
+		<div id="info" class="aboutus">
 			<h2>About us</h2>
+			<p>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. 
+			het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 
+			jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één 
+			van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens
+			het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de
+			secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero,
+			geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissance. 
+			De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32.<br/>
+			Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst
+			in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar 
+			husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd,
+			overgenomen in elektronische letterzetting. Het is in de jaren '60 populair geworden met de introductie van Letraset 
+			vellen met Lorem Ipsum passages en meer recentelijk door desktop publishing software zoals Aldus PageMaker die versies 
+			van Lorem Ipsum bevatten.
+			</p>
 		</div>
-		<div id="contact" class="Сontacts" style="outline:1px solid red; background: #6dbfa3;">
+		<div id="contact" class="contacts">
 			<h2>Сontacts</h2>
-			<form>
+			<div class="forma">
+			<form class="form">
 				<h2>Форма обратной связи</h2>
 				<p>Здесь вы можете оставить нам сообщение</p>
-				<div>
-					<label for="name">ВАШЕ ИМЯ:</label> <input type="text" id="name"/> 
+				<hr/>
+				<div class="main">
+				<div class="name">
+					<label for="name">ВАШЕ ИМЯ:</label> 
+					<input type="text" id="name"/> 
 				</div>
-				<div>
-					<label for="password">ВАШ E-MAIL:</label> <input type="password" id="password"/> 
+				<div class="name">
+					<label for="password">ВАШ E-MAIL:</label> 
+					<input type="password" id="password"/> 
+				</div>
+				</div>
+				<div class="clearfix">
+				
 				</div>
 				<p>Выберите тему для письма и напишите сообщение</p>
-				<div>
+				<hr/>
+				<div class="name1">
 					<label for="select">ТЕМА ПИСЬМА:</label> 
 					<select>
 							<option>-выбрать тему-</option>
@@ -126,19 +163,40 @@
 							<option>3</option>
 					<select/> 
 				</div>
-				<div>
+				<div class="main1">
+				<div class="name1">
 					<label for="textarea">СООБЩЕНИЕ:</label> 
 					<textarea>
 					
 					</textarea>
 				</div>
 				<p>Введите капчу и нажмите "отправить"</p>
-				<div>
+				<hr/>
+				<div class="name1">
 					<label for="text">9+18=</label> <input type="text" id="text"/> 
+				</div>
 				</div>
 				<input type="button" value="ОТПРАВИТЬ"/>
 				<input type="reset" value="ОЧИСТИТЬ"/>
 			</form>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="whiteline"></div>
+			<div class="grayline"></div>
+			<div class="socseti">
+				<a href="#" alt="twitter"><img class="twitter" alt="twitter" src="img/twitter2.png"/></a>
+				<a href="#" alt="facebook"><img class="facebook" alt="facebook" src="img/fc1.png"/></a>
+				<a href="#" alt="vk"><img class="vk" alt="vk" src="img/vk.png"/></a>
+			</div>
+			<p>&copy; 2016 Анна Прокопенко</p>
+			<div class="anchors">
+				<a href=#>Lorem Ipsum</a>
+				<a href=#>Lorem Ipsum</a>
+				<a href=#>Lorem Ipsum</a>
+				<a href=#>Lorem Ipsum</a>
+			</div>
+			
 		</div>
 		</div>	
 	</body>

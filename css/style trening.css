@@ -17,3 +17,37 @@ ol {
 	margin-left: 60px;
 	border: 10px solid red;
 }
+
+
+.name {
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+	
+.password {
+	font: normal 13px/100% Verdana, Tahoma, sans-serif;
+}
+
+.name input {
+	padding: 7px; 
+	border: solid 1px #9d9b9b; 
+	outline: 0; 
+	width: 200px; 
+	background: #FFFFFF; 
+	clear:both; 
+	text-align:right;
+}
+.form {
+	width: 400px;
+	margin: 0 auto;
+	background: #e5e5e5;
+	padding: 20px;
+}
+
+.firstitem {
+	color: #007db6;
+	text-decoration: none;
+}
+
+
+
+	
+	
