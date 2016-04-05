@@ -1,3 +1,6 @@
+body {
+	background: url("../img/brushed_alu_dark.png") 0px 0px;
+}
 .cnt {
 	width: 768px;
 	margin: 0 auto;
@@ -10,19 +13,37 @@
 }
 .slide .item {
 	width: 150px;
-	display: block;
-	float: left;
-	padding: 20px;
+	display: inline-block;
+	padding: 5px;
 	
 	
 }
-
-
+#slider {
+	position: relative;
+}
+#slider .left, #slider .right {
+	position: absolute;
+	top: 160px;
+	width: 32px;
+	height: 23px;
+	display: inline-block;
+}
+#slider .left {
+	background: url("../img/slider_navi.png") 0px 0px no-repeat; 
+	left: 20px;
+}
+#slider .right {
+	background: url("../img/slider_navi.png") -32px 0px no-repeat; 
+	right: 20px;
+}
 .pagination .item {
-	background: url("../img/sprite2.png") 0 0 no-repeat; 
+	background: url("../img/sprite2.png") 0px 0px no-repeat; 
 	display: inline-block;
 	width: 13px;
 	height: 13px;
+}
+.pagination .item:hover {
+	background-position: -33px 0px;
 }
 .item1 {
 	background: url("../img/sprite2.png") 0px -16px no-repeat; 
@@ -83,15 +104,16 @@ label {float:left; padding-right:20px; font: normal 13px/100% Verdana, Tahoma, s
 }
 		
 .logo {
-	float:left;
+	
 	position: absolute;
 	left: 30px;
 	top: 30px;
 	background: #fcfcfc;
 	width: 183px;
 	height: 73px;
-	z-index: +1;
+	z-index: 1;
 	padding: 3px;
+	border: 2px solid #007db6;
 }
 .logo img {
 	vertical-align: middle;
@@ -112,8 +134,7 @@ label {float:left; padding-right:20px; font: normal 13px/100% Verdana, Tahoma, s
 }
 .company {
 	width: 400px;
-	height: 250px;
-	background: #b3aeae;
+	height: 200px;
 	float:right;
 	margin-right: 30px;
 	margin-top: 50px;
@@ -133,7 +154,7 @@ label {float:left; padding-right:20px; font: normal 13px/100% Verdana, Tahoma, s
 	margin-bottom: -10px;
 }
 .promo p {
-	margin-bottom: -5px;
+	margin-bottom: 10px;
 }
 .catalog {
 	height:500px;
@@ -174,14 +195,43 @@ td {
 	right: 30px;
 	top: 50px;
 }
-.blue {
-	width: 50px;
+.panel {
+	width: 40px;
 	height: 250px;
 	background: #007db6;
-	position: absolute;
+	position: fixed;
+	top: 50%;
 	left: 0px;
-	top: 50px;
+	margin-top: -125px;
 }
+.panel .adminContent {
+	width: 400px;
+	height: 350px;
+	background: #fbfafa;
+	position: absolute;
+	right: 40px;
+	margin-top: -50px;
+	
+}
+.panel:hover {
+	left: 400px;
+}
+.adminContent input {
+	width: 70px;
+	text-align: center;
+	margin-right: 20px;
+}
+.adminContent .discount {
+	font-size: 20px;
+}
+.adminContent fieldset {
+	text-align: center;
+	margin-top: 100px;
+}
+.adminContent .button {
+	width: 100%;
+	margin-top: 20px;
+} 
 .aboutus {
 	height: 400px;
 	padding: 30px;
@@ -270,4 +320,7 @@ a:hover {
     color:#c318b9;   /*РОЗОВЫЙ*/
     text-decoration: underline;
 	font-size: 18px;
+}
+.pointer {
+	cursor: pointer;
 }
