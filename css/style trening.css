@@ -56,5 +56,81 @@ ol {
 	left: 10px;
 	top: 30px;
 }
+
+/*FOOTER*/
+.footer {
+	width: 100%; 
+	height: 150px; 
+	background: #030303; 
+	position: relative;
+}
+.whiteline {
+	height: 20px;
+	background: #fcfcfc;
+}
+.grayline {
+	height: 10px;
+	background: #007db6;
+}
+.socseti {
 	
+}
+.socseti .twitter {
+	width: 40px; 
+	height: 40px;
+	position: relative;
+	left: 30px;
+	top: 30px;
+	background: url("../img/Round Social Icons.png") 0px 0px no-repeat;
+}
+.socseti .facebook {
+	width: 40px; 
+	height: 40px;
+	position: relative;
+	left: 50px;
+	top: 30px;
+	
+}
+.socseti .vk {
+	width: 40px; 
+	height: 40px;
+	position: relative;
+	left: 70px;
+	top: 30px;
+	
+}
+.footer p {
+	color: #fcfcfc;
+	position: relative;
+	top: 30px;
+	text-align: center;
+	font-size: 13px; 
+}
+.anchors {
+	position: absolute;
+	top: 70px;
+	right: 30px;
+}
+.anchors a {
+	padding: 10px;
+}
+a:link {
+	color: #35e9d6;   /*ЗЕЛЕНЫЙ*/
+	text-decoration: none;
+}
+ a:active {
+	color: #616267;  /*СЕРЫЙ*/
+	text-decoration: none;
+}
+ a:visited {
+	color: #007db6;    /*СИНИЙ*/
+	text-decoration: none;
+}
+a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+	font-size: 18px;
+}
+/*FOOTER*/
+
 	

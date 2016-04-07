@@ -7,30 +7,46 @@
 	</head>
 	<body>
 		<form class="form">
-		<div class="parent">
-			<div class="child">
-				<label for="name">ВАШЕ ИМЯ:</label>
-				<input type="text" id="name"/>
+			<h3>Форма обратной связи</h3>
+			<p>Здесь вы можете оставить нам сообщение</p>
+			<hr/>
+			<div class="name">
+				<label for="name">Ваше имя:</label>
+				<input placeholder="имя" type="text" id="name"/>
 			</div>
-			<div class="child">	
-				<label for="password">ВАШ E-MAIL:</label> 
-				<input type="password" id="password"/>
+			<div class=clearfix></div>
+			<div class="password">	
+				<label for="password">Ваш E-MAIL:</label> 
+				<input placeholder="e-mail" type="password" id="password"/>
 			</div>
-			<div class="child">
-				<label for="select">ТЕМА ПИСЬМА:</label> 
+			<div class=clearfix></div>
+			<hr/>
+			<div class="select">
+				<label for="select">Тема письма:</label> 
 					<select>
 							<option>-выбрать тему-</option>
+							<option>1</option>
 							<option>2</option>
 							<option>3</option>
 					<select/> 
 			</div>
-			<div class="child">
-					<label for="textarea">СООБЩЕНИЕ:</label> 
-					<textarea>
-					
+			<div class=clearfix></div>
+			<div class="textarea">
+					<label for="textarea">Сообщение:</label> 
+					<textarea  id="textarea" placeholder="Введите сообщение">
 					</textarea>
 			</div>
-		
+			<div class=clearfix></div>
+			<p>Введите капчу и нажмите "отправить"</p>
+			<hr/>
+			<div class="kapcha">
+				<label for="text">9+18=</label> <input type="text" id="text"/> 
+			</div>
+			<div class=clearfix></div>
+			<div class="button">
+				<input class="send" type="button" value="ОТПРАВИТЬ"/>
+				<input class="clear" type="reset" value="ОЧИСТИТЬ"/>
+			</div>
 		</form>
 	</body>
 </html>

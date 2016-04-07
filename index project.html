@@ -51,8 +51,7 @@
 					<img alt="First" src="img/1.jpeg"/></br>
 					<span class="firstitem">Lorem Ipsum</span>
 				</a> 
-				<div class="clearfix">
-				</div>
+				<div class="clearfix"></div>
 			</div>
 			<span class="left"></span>
 			<span class="right"></span>
@@ -120,14 +119,14 @@
 		</div>
 		<div id="info" class="aboutus">
 			<h2>About us</h2>
-			<p>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. 
+			<p><div class="imgAbout"></div>In tegenstelling tot wat algemeen aangenomen wordt is Lorem Ipsum niet zomaar willekeurige tekst. 
 			het heeft zijn wortels in een stuk klassieke latijnse literatuur uit 45 v.Chr. en is dus meer dan 2000 
 			jaar oud. Richard McClintock, een professor latijn aan de Hampden-Sydney College in Virginia, heeft één 
 			van de meer obscure latijnse woorden, consectetur, uit een Lorem Ipsum passage opgezocht, en heeft tijdens
 			het zoeken naar het woord in de klassieke literatuur de onverdachte bron ontdekt. Lorem Ipsum komt uit de
 			secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" (De uitersten van goed en kwaad) door Cicero,
 			geschreven in 45 v.Chr. Dit boek is een verhandeling over de theorie der ethiek, erg populair tijdens de renaissance. 
-			De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32.<br/>
+			De eerste regel van Lorem Ipsum, "Lorem ipsum dolor sit amet..", komt uit een zin in sectie 1.10.32.<br/> <div class="imgAbout1"></div>
 			Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst
 			in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar 
 			husselde om een font-catalogus te maken. Het heeft niet alleen vijf eeuwen overleefd maar is ook, vrijwel onveranderd,
@@ -137,78 +136,105 @@
 			</p>
 		</div>
 		<div id="contact" class="contacts">
-			<h2>Сontacts</h2>
+			<h2>Сontact Us</h2>
+			<span class="picture"></span>
 			<div class="forma">
-			<form class="form">
-				<h2>Форма обратной связи</h2>
-				<p>Здесь вы можете оставить нам сообщение</p>
-				<hr/>
-				<div class="main">
-				<div class="name">
-					<label for="name">ВАШЕ ИМЯ:</label> 
-					<input type="text" id="name"/> 
-				</div>
-				<div class="name">
-					<label for="password">ВАШ E-MAIL:</label> 
-					<input type="password" id="password"/> 
-				</div>
-				</div>
-				<div class="clearfix">
-				
-				</div>
-				<p>Выберите тему для письма и напишите сообщение</p>
-				<hr/>
-				<div class="name1">
-					<label for="select">ТЕМА ПИСЬМА:</label> 
-					<select>
-							<option>-выбрать тему-</option>
-							<option>2</option>
-							<option>3</option>
-					<select/> 
-				</div>
-				<div class="main1">
-				<div class="name1">
-					<label for="textarea">СООБЩЕНИЕ:</label> 
-					<textarea>
-					
-					</textarea>
-				</div>
-				<p>Введите капчу и нажмите "отправить"</p>
-				<hr/>
-				<div class="name1">
-					<label for="text">9+18=</label> <input type="text" id="text"/> 
-				</div>
-				</div>
-				<input type="button" value="ОТПРАВИТЬ"/>
-				<input type="reset" value="ОЧИСТИТЬ"/>
-			</form>
+				<form class="form">
+					<h3>Форма обратной связи</h3>
+					<p>Здесь вы можете оставить нам сообщение</p>
+					<hr/>
+					<div class="name">
+						<label for="name">Ваше имя:</label>
+						<input placeholder="имя" type="text" id="name"/>
+					</div>
+					<div class=clearfix></div>
+					<div class="password">	
+						<label for="password">Ваш E-MAIL:</label> 
+						<input placeholder="e-mail" type="password" id="password"/>
+					</div>
+					<div class=clearfix></div>
+					<hr/>
+					<div class="select">
+						<label for="select">Тема письма:</label> 
+							<select>
+									<option>-выбрать тему-</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+							<select/> 
+					</div>
+					<div class=clearfix></div>
+					<div class="textarea">
+							<label for="textarea">Сообщение:</label> 
+							<textarea  id="textarea" placeholder="Введите сообщение">
+							</textarea>
+					</div>
+					<div class=clearfix></div>
+					<p>Введите капчу и нажмите "отправить"</p>
+					<hr/>
+					<div class="kapcha">
+						<label for="text">9+18=</label> <input type="text" id="text"/> 
+					</div>
+					<div class=clearfix></div>
+					<div class="button">
+						<input class="send" type="button" value="ОТПРАВИТЬ"/>
+						<input class="clear" type="reset" value="ОЧИСТИТЬ"/>
+					</div>
+				</form>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="whiteline"></div>
-			<div class="grayline"></div>
-			<div class="socseti">
-				<a href="#" alt="twitter"><img class="twitter" alt="twitter" src="img/twitter2.png"/></a>
-				<a href="#" alt="facebook"><img class="facebook" alt="facebook" src="img/fc1.png"/></a>
-				<a href="#" alt="vk"><img class="vk" alt="vk" src="img/vk.png"/></a>
+		<!--FOOTER-->
+		<footer>
+			<span class="white"></span>
+			<span class="blu"></span>
+			<ul class="ch-grid">
+				<li>
+					<div class="ch-item ch-img-1">
+						<div class="ch-info">
+							<a href="https://www.facebook.com" target="_blank"><h3>move</h3></a>
+							<a href="#" alt="facebook"></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-2">
+						<div class="ch-info">
+							<a href="https://mail.ru" target="_blank"><h3>send</h3></a>
+							<a href="#" alt="mail"></a>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ch-item ch-img-3">
+						<div class="ch-info">
+							<a href="https://twitter.com/" target="_blank"><h3>move</h3></a>
+							<a href="#" alt="twitter"></a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="anchors">
+				<div class="slKat">
+					<span><a href=#slider>Слайдер товаров</a></span>
+					<span><a href=#catalog>Каталог</a></span>
+				</div>
+				<div class="aboutCont">
+					<span><a href=#info>О нас</a></span>
+					<span><a href=#contact>Контакты</a></span>
+				</div>
 			</div>
 			<p>&copy; 2016 Анна Прокопенко</p>
-			<div class="anchors">
-				<a href=#>Lorem Ipsum</a>
-				<a href=#>Lorem Ipsum</a>
-				<a href=#>Lorem Ipsum</a>
-				<a href=#>Lorem Ipsum</a>
-			</div>
-			
-		</div>
+		</footer>
+		<!--FOOTER-->
 		</div>	
 		<div class="panel">
+			<span class="text">ADMIN PANEL</span>
 			<div class="adminContent">
 				<fieldset>
 					<legend class="discount">Дисконт</legend>
-					<input type="text" value="День"></input>
-					<input type="text" value="Месяц"></input>
-					<input type="text" value="Год"></input>
+					<input type="text" placeholder="День"></input>
+					<input type="text" placeholder="Месяц"></input>
+					<input type="text" placeholder="Год"></input>
 					<input class="button" type="button" value="Отправить"></input>
 				</fieldset>
 			</div>
