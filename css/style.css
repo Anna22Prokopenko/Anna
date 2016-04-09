@@ -190,28 +190,61 @@ td {
 
 /*ABOUT US*/
 .aboutus {
-	height: 400px;
 	padding: 30px;
 	text-align: justify;
 	margin-top: -30px;
-	margin-bottom: 20px;
 }
-.aboutus h2 {
+.aboutus a h2 {
 	text-align: center;
 }
+.aboutus a:link {
+	color: #030303;   /*черный*/
+	text-decoration: none;   
+}
+.aboutus a:active {
+	color: #616267;  /*СЕРЫЙ*/
+	text-decoration: none;
+}
+.aboutus a:visited {
+	color: #007db6;    /*СИНИЙ*/
+	text-decoration: none;
+}
+.aboutus a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+	font-size: 18px;
+}
 .imgAbout {
-	width: 170px;
+	width: 155px;
 	height: 114px;
 	float: left;
-	background: url("../img/aboutUs_3.png") 0px 0px no-repeat;
-	margin-right: 10px;
+	background: url("../img/aboutUs_2.png") 0px 0px no-repeat;
+	background-size: contain;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-0-transition: all 0.3s ease-in-out;
+	
+}
+.imgAbout:hover {
+	transform: scale(2,2);
+	
 }
 .imgAbout1 {
 	width: 170px;
 	height: 114px;
 	float: right;
-	background: url("../img/aboutUs_3.png") 0px 0px no-repeat;
+	background: url("../img/aboutUs_1.png") 0px 0px no-repeat;
+	background-size: contain;
 	margin-left: 10px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-0-transition: all 0.3s ease-in-out;
+}
+.imgAbout1:hover {
+	transform: scale(2,2);
+	
 }
 /*ABOUT US*/
 
@@ -219,38 +252,73 @@ td {
 	/*FORMA*/
 	.form {
 	width: 330px;
-	margin: 0 auto;
-	background: rgba(229,229,229,0.8);
-	padding: 20px;
-	font-size: 17px; 
-	max-width: 350px; 
-	margin: 10px auto; padding: 1em; 
+	height: 50px;
+	background: #bbb; 
+	max-width: 350px;  
 	box-shadow: 
-	0 1px 4px rgba(0, 0, 0, .3), 
-	-23px 0 20px -23px rgba(0, 0, 0, .8), 
-	23px 0 20px -23px rgba(0, 0, 0, .8), 
+	0 1px 5px rgba(0, 0, 0, .5), 
+	-26px 0 22px -23px rgba(0, 0, 0, .8), 
+	26px 0 22px -23px rgba(0, 0, 0, .8), 
 	0 0 40px rgba(0, 0, 0, .1) inset; 
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-0-transition: all 0.3s ease-in-out; 
+	overflow: hidden;
+	opacity: .6;
 	}
-	.form h3 {
+	.form:hover {
+		transform: scale(1.1,1.1);
+		box-shadow: 
+	0 1px 5px rgba(0, 0, 0, .5), 
+	-26px 0 22px -23px rgba(0, 0, 0, .8), 
+	26px 0 22px -23px rgba(0, 0, 0, .8), 
+	0 0 40px rgba(0, 0, 0, .1) inset;
+	height: 385px;
+	opacity: 1;
+	}
+	
+	.form .formHeader {
+		width: 330px; 
+		height: 50px;
+		background: #bbb;
+		border-bottom: 3px groove white;
+	}
+	.form  .formHeader  h3 {
 		text-align: center;
-		color: black;
-		margin-bottom: -10px;
-		margin-top: -5px;
-		font-size: 20px; 
+		color: #e5e5e5;
+		margin-top: 0px;
+		font-size: 22px; 
+		line-height: 50px;
+	}	
+	.form  .formHeader  img {
+		float: left;
+		margin-left: 25px;
+		margin-top: 10px;
+	} 
+	.form .bodyForm {
+		padding: 1em;
+		border-bottom: 3px groove white;
 	}
-	.form p {
-		text-align: left;
-		margin-bottom: -7px;
-		font-size: 16px;
+	.form .bodyForm p {
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.password {
+		height: 30px;
+		border-bottom: 3px groove white;
 	}
 	.name input {
-		width: 200px;
+		width: 180px;
 		height: 18px;
 		margin-bottom: 10px;
 		float: right;
 		transition: all 0.4s ease-out;
 		padding-left: 5px;
-		
+		transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-0-transition: all 0.4s ease-in-out;
 	}
 	.name input:focus {
 		outline: none;
@@ -261,7 +329,7 @@ td {
 		clear: both;
 	}
 	.password input {
-		width: 200px;
+		width: 180px;
 		height: 18px;
 		margin-bottom: 10px;
 		float: right;
@@ -273,12 +341,15 @@ td {
 		border-color: rgba(0,125,182,0.7);
 	}
 	.select select {
-		width: 205px;
+		width: 187px;
 		height: 23px;
 		float: right;
 		transition: all 0.4s ease-out;
 		text-align: center;
-		
+		margin-top: 10px;
+	}
+	.select label {
+		margin-top: 10px;
 	}
 	.select select:focus {
 		outline: none;
@@ -286,30 +357,44 @@ td {
 	}
 	.textarea textarea {
 		float: right;
-		width: 325px;
+		width: 180px;
 		height: 50px;
 		transition: all 0.4s ease-out;
+		margin-top: 10px;
 	}
 	.textarea textarea:focus {
 		outline: none;
 		border-color: rgba(0,125,182,0.7);
 	}
+	.textarea label {
+		margin-top: 25px;
+	}
 	.kapcha input {
-		width: 130px;
+		width: 180px;
 		height: 18px;
-		margin-bottom: 10px;
+		margin-top: 10px;
 		float: right;
 		transition: all 0.4s ease-out;
-		margin-bottom: 10px;
+	}
+	.kapcha {
+		border-top: 3px groove white;
+	}
+	.kapcha label {
+		margin-top: 12px;
 	}
 	.button {
 		position: relative;
 		height: 30px;
+		margin-top: 10px;
 	}
 	.button input {
 		width: 120px;
 		height: 30px;
 		
+	}
+	.button input:hover{
+		background: #11aeeb;
+		color: #fdfdfd;
 		
 	}
 	.button .send {
@@ -323,30 +408,149 @@ td {
 
 	label {
 		float:left;
-		padding-right:10px;
 	}
 	/*FORMA*/
 .contacts {
-	height: 500px;
+	height: 370px;
 	background: #616267;
+	padding: 5px;
+	position: relative;
 }
-.contacts h2 {
-	color: #f6f6f8;
+.contacts a h2 {
 	text-align: center;
 }
-.forma {
-	float: left;
-	margin-left: 30px;
+.contacts a:link {
+	color: #ffffff;   /*белый*/
+	text-decoration: none;   
 }
-.picture {
-	display: inline-block;
-	height: 242px;
-	width:  300px;
-	background: url("../img/aboutUs_2.png") 0px 0px no-repeat; 
+.contacts a:active {
+	color: #616267;  /*СЕРЫЙ*/
+	text-decoration: none;
+}
+.contacts a:visited {
+	color: #007db6;    /*СИНИЙ*/
+	text-decoration: none;
+}
+.contacts a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+	font-size: 18px;
+}
+.forma {
+	position: absolute;
+	top: 19%;
+	right: 30px;
+	z-index: 1;
+}
+.map {
+	height: 200px;
+	width: 330px;
+	background: #bbb;
 	float: right;
 	margin-right: 30px;
-	margin-top: 80px;
+	margin-top: 70px;
 }
+/*Hover style image*/
+.view {
+    width: 300px;
+    height: 250px;
+    margin-left: 30px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../img/aboutUs_2.png) no-repeat center center;
+	background-size: contain;
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-first img { 
+    transition: all 0.2s linear;
+	
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(219,127,8, 0.7); 
+    transition: all 0.4s ease-in-out;
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+	transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+.view-first:hover img { 
+	transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+	opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+.view-first:hover a.info {
+    transition-delay: 0.2s;
+}
+/*Hover style image*/
+
 /*CONTACTS*/
 
 .clearfix2 {
@@ -357,11 +561,18 @@ td {
 .panel {
 	width: 40px;
 	height: 250px;
-	background: #007db6;
+	background: #11aeeb;
 	position: fixed;
 	top: 50%;
 	left: 0px;
 	margin-top: -125px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-0-transition: all 03s ease-in-out; 
+}
+.panel:hover {
+	left: 400px;
 }
 .panel .text {
 	width: 150px;
@@ -382,9 +593,6 @@ td {
 	position: absolute;
 	right: 40px;
 	margin-top: -50px;	
-}
-.panel:hover {
-	left: 400px;
 }
 .adminContent input {
 	width: 100px;
@@ -427,6 +635,83 @@ td {
 
 /*ADMIN PANEL*/
 
+/*MENU*/
+.menu {
+	position: fixed;
+	top: 1%;
+	left: 0px;
+	font: 16px Arial, sans-serif;
+}
+
+.nav {
+	list-style: none;
+	width: 50px;
+	padding: 0;
+	opacity: .6;
+	transition: opacity .3s ease-in-out;
+}
+
+.nav:hover {
+	opacity: 1;
+}
+.nav li {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    transition: width .2s ease-in-out, height .2s ease-in-out .2s;
+}
+.nav li:hover {
+	width: 200px;
+	height: 175px;/*??*/
+}
+.nav li a {
+	display: block;
+	width: 200px;
+	height: 40px;
+    line-height: 40px;
+    background: #bbb;
+    margin: 1px;
+    color: #e5e5e5;
+    padding-left: 15px;
+    cursor: pointer;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -0-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+.nav li a:hover { 
+	background: #11aeeb;
+}
+
+.nav li a:first-child {
+	font-size: 1.1em;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	text-indent: 36px;
+}
+
+.nav li a:first-child:before {
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	background: url(../img/sprite.png) no-repeat;
+}
+
+.nav li.settings a:first-child:before {
+	background-position: -32px 0px;
+}
+.nav li.link a:first-child:before {
+	background-position: -64px 0px;
+}
+.nav li.search a:first-child:before {
+	background-position: -96px 0px;
+}
+/*MENU*/
 /*FOOTER*/
 footer {
 	width: 100%; 
@@ -503,7 +788,7 @@ footer p {
 }
 .ch-info {
 	position: absolute;
-	background: rgba(63,147,147, 0.6);
+	background: rgba(219,127,8, 0.7);
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
@@ -539,7 +824,7 @@ footer p {
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 .ch-info  a:hover {
-	color: rgba(255,242,34, 0.8);
+	color: rgba(1,1,1,.7);
 }
 .ch-item:hover {
 	box-shadow: 
