@@ -1,0 +1,47 @@
+html {
+	height: 100%;
+}
+body {
+	height: inherit;
+	margin: 0;
+}
+.cnt {
+	height: inherit;
+	width: 800px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+header {
+	height: 12%;
+	background: #18202b;
+}
+.wrapper {
+	position: relative;
+	height: 68%;
+}
+.content {
+	height: 1085px;
+	width: 660px;
+	position: absolute;
+	left: 70px;
+	bottom: -17px;
+	background: #ffffff;
+	
+}
+.block1 {
+	height: px;
+	background: #1e2735;
+}
+.block2 {
+	height: px;
+	background: #f5f5f5;
+}
+footer {
+	height: 30%;
+	background: pink;
+}
+.gray {
+	height: px;
+	background: #1e2735;
+	
+}
