@@ -88,6 +88,7 @@ body {
 	width: 32px;
 	height: 23px;
 	display: inline-block;
+	cursor: pointer;
 }
 #slider .left {
 	background: url("../img/slider_navi1.png") 0px 0px no-repeat; 
@@ -890,3 +891,55 @@ a:hover {
 /*Стили ссылок*/
 
 /*FOOTER*/
+
+/*popap*/
+.overlay {
+	background: url(../img/overlay1.png);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 999;
+}
+.dialog {
+	width: 500px;
+	display: block;
+	background: white;
+	margin: 0 auto 0 -250px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+}
+.time {
+	display: inline-block;
+	
+}
+.time span {
+	width: 20px;
+	height: 40px;
+	border: 4px outset #B9B7B7;
+	border-radius: 3px;
+	font-weight: bold;
+	box-shadow: inset 0px 0px 8px rgba(0,0,0,0.5);
+	display: inline-block;
+	font-size: 27px;
+	text-align: center;
+	line-height: 40px;
+	position: relative;
+}
+
+.time .reset {
+	border: none;
+	box-shadow: none;
+}
+span:before {
+	content:"";
+	display: block;
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	background: white;
+}
+/*popap*/
