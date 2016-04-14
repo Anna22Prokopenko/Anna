@@ -19,14 +19,22 @@ body {
 	height: 25px;
 	position: relative;
 	top: 45px;
+	line-height: 25px;
 }
-.links a {
+.header .links a {
 	vertical-align: middle;
 	margin-right: 30px;
+	color: black;
 }
-		
+.header .links a:visited {
+	color: rgba(45, 159, 213, 0.91);    /*СИНИЙ*/
+	text-decoration: none;
+}
+.header .links a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+}		
 .logo {
-	
 	position: absolute;
 	left: 30px;
 	top: 30px;
@@ -40,6 +48,15 @@ body {
 .logo img {
 	vertical-align: middle;
 	padding: 5px;
+}
+.logo a{
+	transition: background 0.3s ease-in-out;
+	height: 73px;
+	width: 183px;
+	display: block;
+}
+.logo a:hover {
+	background-color: rgba(219,127,8, 0.7);
 }
 .clearfix {
 	clear: both;
@@ -113,22 +130,6 @@ body {
 .pagination .item:hover {
 	background-position: -33px 0px;
 }
-.item1 {
-	background: url("../img/sprite2.png") 0px -16px no-repeat; 
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	vertical-align: middle;
-	margin-left: -2.5px;
-}
-.item2 {
-	background: url("../img/sprite2.png") -17px -16px no-repeat; 
-	display: inline-block;
-	width: 15px;
-	height: 15px;
-	vertical-align: middle;
-	margin-left: -2.5px;
-}
 .promo {
 	text-align: center;
 	height: 280px;
@@ -149,43 +150,116 @@ body {
 
 /*CATALOG*/
 .catalog {
-	height:500px;
+	height:400px;
 	background: #616267;
 	position: relative;
 }
 .catalog h2 {
-	color: #f6f6f8;
 	text-align: center;
+	margin-top: 0px;
+	padding-top: 20px;
+}
+.catalog a:link {
+	color: white;   /*белый*/
+	text-decoration: none;
+}
+.catalog a:active {
+	color: #616267;  /*СЕРЫЙ*/
+	text-decoration: none;
+}
+.catalog a:visited {
+	color: rgba(45, 159, 213, 0.91);    /*белый*/
+	text-decoration: none;
+}
+.catalog a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+}
+/*TABLE*/
+.visiblT {
+	width: 436px;
+	height: 315px;
+	overflow: scroll;
+}
+
+::-webkit-scrollbar-button {
+width:15px;
+height:15px;
+background: rgba(255, 255, 255, 0.74);
+
+}
+
+::-webkit-scrollbar-track {
+background-color: rgba(236, 237, 238, 0.71);
+}
+
+::-webkit-scrollbar-thumb {
+background-color: rgba(84, 192, 243, 0.91);
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#56999f;
+}
+::-webkit-scrollbar{
+width: 6px;
+}
+::-webkit-scrollbar:horizontal {
+	height: 6px;
 }
 table {
-	width: 350px;
-	height: 250px;
-	margin-left: 70px;
-	border: 2px solid #ceced0;
-	border-collapse: collapse;
-	color: #f6f6f8;
+	width: 400px;
+	margin-left: 30px;
 }
-td,th {
-	border: 2px solid #ceced0;
+td,tr {
+	background-color: #bbb;
 	height: 30px;
+	border-spacing: 5px 10px;
+	border-collapse: collapse;
+	border: 1px solid #bbb;
+	color: black;
 }
-th {
-	background-color: #fefefe;
-	color: #616267;
-}
+
 td {
 	padding-left: 15px;
+}
+.item1 {
+	background: url("../img/sprite2.png") 0px -16px no-repeat; 
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: -2.5px;
+	cursor: pointer;
+}
+.item2 {
+	background: url("../img/sprite2.png") -17px -16px no-repeat; 
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	vertical-align: middle;
+	margin-left: -2.5px;
+	cursor: pointer;
+}
+.item1:hover {
+	background-color: gray;
+}
+.item2:hover {
+	background-color: gray;
 }
 .size {
 	width: 20px;
 }
+/*TABLE*/
 .viewer {
-	width: 300px;
-	height: 410px;
-	background: #d6d7e4;
-	position: absolute;
-	right: 30px;
-	top: 50px;
+	width: 285px;
+	height: 315px;
+	background: url("../img/2.jpeg") 0px 0px no-repeat;
+	background-position: 50%50%;
+	background-size: contain;
+	background-color: white;
+	margin-right: 30px;
+	float: right;
+
 }
 /*CATALOG*/
 
@@ -207,13 +281,12 @@ td {
 	text-decoration: none;
 }
 .aboutus a:visited {
-	color: #007db6;    /*СИНИЙ*/
+	color: rgba(84, 191, 241, 0.91);    /*СИНИЙ*/
 	text-decoration: none;
 }
 .aboutus a:hover {
     color:#c318b9;   /*РОЗОВЫЙ*/
     text-decoration: underline;
-	font-size: 18px;
 }
 .imgAbout {
 	width: 155px;
@@ -429,13 +502,12 @@ td {
 	text-decoration: none;
 }
 .contacts a:visited {
-	color: #007db6;    /*СИНИЙ*/
+	color: rgba(45, 159, 213, 0.91);    /*СИНИЙ*/
 	text-decoration: none;
 }
 .contacts a:hover {
     color:#c318b9;   /*РОЗОВЫЙ*/
     text-decoration: underline;
-	font-size: 18px;
 }
 .forma {
 	position: absolute;
@@ -567,10 +639,10 @@ td {
 	top: 50%;
 	left: 0px;
 	margin-top: -125px;
-	transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-webkit-transition: all 0.3s ease-in-out;
-	-0-transition: all 03s ease-in-out; 
+	transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+	-0-transition: all 04s ease-in-out; 
 }
 .panel:hover {
 	left: 400px;
@@ -880,19 +952,20 @@ a:link {
 	text-decoration: none;
 }
  a:visited {
-	color: #007db6;    /*СИНИЙ*/
+	color: rgba(45, 159, 213, 0.91);    /*СИНИЙ*/
 	text-decoration: none;
 }
 a:hover {
     color:#c318b9;   /*РОЗОВЫЙ*/
     text-decoration: underline;
-	font-size: 18px;
+	
 }
 /*Стили ссылок*/
 
 /*FOOTER*/
 
 /*popap*/
+/*
 .overlay {
 	background: url(../img/overlay1.png);
 	width: 100%;
@@ -900,19 +973,24 @@ a:hover {
 	position: fixed;
 	top: 0px;
 	z-index: 999;
+	
 }
 .dialog {
-	width: 500px;
+	width: 600px;
 	display: block;
 	background: white;
-	margin: 0 auto 0 -250px;
+	margin: 0 auto 0 -300px;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%);
+	padding: 20px;
+	text-align: justify;
 }
 .time {
 	display: inline-block;
+	width: 600px;
+	margin-top: 20px;
 	
 }
 .time span {
@@ -933,7 +1011,7 @@ a:hover {
 	border: none;
 	box-shadow: none;
 }
-span:before {
+.timeright span:before {
 	content:"";
 	display: block;
 	width: 100%;
@@ -942,4 +1020,20 @@ span:before {
 	top: 50%;
 	background: white;
 }
+.timeright {
+	float: right;
+    margin-right: 20px;
+}
+.ovimg {
+	background: url(../img/15.jpeg) 0px 0px no-repeat;
+	background-size: contain;
+	display: block;
+	height: 200px;
+	width: 200px;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+}
+*/
 /*popap*/
