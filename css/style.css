@@ -146,6 +146,22 @@ body {
 .pointer {
 	cursor: pointer;
 }
+.promo a:link {
+	color: black;   /*белый*/
+	text-decoration: none;
+}
+.promo a:active {
+	color: #616267;  /*СЕРЫЙ*/
+	text-decoration: none;
+}
+.promo a:visited {
+	color: rgba(45, 159, 213, 0.91);    /*белый*/
+	text-decoration: none;
+}
+.promo a:hover {
+    color:#c318b9;   /*РОЗОВЫЙ*/
+    text-decoration: underline;
+}
 /*PROMO*/
 
 /*CATALOG*/
