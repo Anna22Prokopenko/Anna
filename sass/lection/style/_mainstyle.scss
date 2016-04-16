@@ -1,0 +1,136 @@
+/*
+$color: green;
+h1 {
+	color: lighten($color, 35%);
+}
+$return: red;
+$cancel: yellow;
+$save: green;
+.return {
+	background: lighten($return, 35%);
+	border: 1px solid gray;
+	border-radius: 2px;
+	height: 30px;
+	width: 100px;
+	margin-right: 10px;
+	box-shadow: 5px 4px 2px rgba(0,0,0,0.5);
+}
+.cancel {
+	background: lighten($cancel, 35%);
+	@extend .return;
+}
+.save {
+	background: lighten($save, 35%);
+	@extend .return;
+}
+
+.menu {
+	li {
+	&:hover {
+	color: blue;}
+	&.list1 {
+	color: red;}
+	&.list1:hover {
+	color: green;}
+	}
+}
+*/
+
+$color: green;
+$bg_color: yellow;
+$bg_color_sp: blue;
+$grid-width: 16px;
+$gutter-width: 30px;
+@function grid-width($n) {
+	@return $n * $grid-width + ($n - 1) * $gutter-width;
+}
+/*добавляет прозрачностьfade-out()
+.cancel {
+	background: fade-out($color,.4);
+	color: mix(red,blue,60%);
+	border: none;
+	border-radius: 5px;
+	padding: 10px 15px;
+}
+.save {
+	@extend .cancel;
+	background: fade-in($color,.7);
+	color: mix(yellow,$color,70%);
+}
+*/
+/*mix() смешивает цвета*/
+/*круглые скобки позволяют выполнять математические действия*/
+/*function*/
+@mixin border($color, $width:1px) {
+	border: {
+		color: $color;
+		width: $width;
+		style: dashed;
+	}
+	border-radius: 5px;
+}
+$values: green, yellow, blue;
+@mixin colors($text, $bg, $bd) {
+	color: $text;
+	background: $bg;
+	border:  2px solid $bd;
+}
+.block {
+	background: $bg_color;
+	width: grid-width(8); 
+	@include border(red,5px);
+	span {
+		width: $grid-width;
+		background-color: $bg_color_sp; 
+		display: inline-block;
+	}
+}
+/*mixin*/
+@mixin text {
+	font: bold 20px Arial, sans-serif;
+	color: red;
+	text-decoration: underline;
+	font-style: italic;
+}
+p {
+	@include text;
+}
+h1 {
+	@include colors($values...);
+}
+/*if*/
+p{
+	@if 1+2==3 {border:5px solid;}
+	@if 4<3 {color:red;}
+	@if null {padding: 5px;}
+}
+$type: save;
+$type1: cancel;
+$type2: delite;
+input {
+	@if $type == save {color:blue;}
+	@if $type1 == cancel {background:green;}
+	@if $type2 == delite {background:red;}
+	@else {color:black;}
+}
+.input-1 {
+	height: 50px;
+	width: 100px;
+}
+@for $i from 1 through 3 {
+	.input-#{$i} {
+		width: 2em * $i;
+	}
+}
+
+$i:0;
+@each $sprite in gray, yellow, red, blue {
+.#{$sprite}-icon 
+{
+	background: url("../img/sprite.png") #{$i}px 0px no-repeat;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+$i: $i - 16;
+}
