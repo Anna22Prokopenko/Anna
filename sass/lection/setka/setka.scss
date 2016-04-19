@@ -1,0 +1,57 @@
+/*решение домашнего примера
+$x:0;
+$y:0;
+@each $list in $arr {
+	.#
+}
+
+
+*/
+$base-columns-amount:16;
+$color: blue;
+$bg_cnt: gray;
+$bg_cell: white;
+@for $i from 1 through $base-columns-amount {
+	$minimum-column-width: 100%/$i;
+	.grd-fill-column#{$i} {
+		width: $minimum-column-width;
+		
+	}
+}
+
+@for $i from 1 through $base-columns-amount {
+	$minimum-column-width: 100%/$base-columns-amount;
+	.grd-step-column#{$i} {
+		width: $minimum-column-width*$i;	
+	}
+}
+.grd-row1 {
+	font-size: 0;
+	[class*="grd-step-column"], [class*="grd-fill-column"]{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	padding: 0 5px;
+	box-sizing: border-box;
+	border: 1px solid black;
+	background: $bg_cell;
+	}
+}
+
+.cnt {
+	width: 1200px;
+	background: $bg_cnt;
+	margin: 0 auto;
+}
+.grd-row2 {
+	font-size: 0;
+	[class*="grd-step-column"], [class*="grd-fill-column"]{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 14px;
+	padding: 0 5px;
+	box-sizing: border-box;
+	
+	background: $bg_cell;
+	}
+}

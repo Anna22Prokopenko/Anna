@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Selectors</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style>
+		.second {
+			height: 600px;
+			width: 500px;
+			box-sizing: border-box;
+			padding: 10px;
+			border: 5px solid blue;
+		}
+		.first {
+			height: 600px;
+			width: 500px;
+			box-sizing: content-box;
+			padding: 10px;
+			border: 5px solid red;
+		}
+		
+		span[lang] {
+			font-weight: bold;
+		}
+		span[lang="pt"] {
+			color: green;
+		}
+		span[lang~="df"] {
+			color: red;
+		}
+		span[lang|="zh"] {
+			color: yellow;
+		} <!--обращается когда после слова стоит тире-->
+		a[href^="#"] {
+			font-style: italic;
+		} <!--^ означает "начинается"-->
+		a[href$=".cn"] {
+			color: red;
+		}
+		a[href*="example"] {
+			border: 1px solid red;
+		}
+		<!--box-sizing: content-box(ширина контента паддингов и маржинов суммируется), 
+		border-box(только ширина контентной части)-->
+		
+		
+	</style>
+  </head>
+  <body>
+	<div class="first">первый</div>
+	<div class="second">второй</div>
+    <div class="hello-example">
+      <a href="http://example.com">English:</a>
+      <span lang="en-us en-gb en-au en-nz df">Hello World!</span>
+    </div>
+    <div class="hello-example">
+      <a href="#portuguese">Portuguese:</a>
+      <span lang="pt">Olá Mnd!</span>
+    </div>
+    <div class="hello-example">
+      <a href="http://example.cn">Chinese (Simplified):</a>
+      <span lang="zh-CN">世界您好！</span>
+    </div>
+    <div class="hello-example">
+      <a href="http://example.cn">Chinese (Traditional):</a>
+      <span lang="zh-TW">世界您好！</span>
+    </div>
+  </body>
+</html>
+
