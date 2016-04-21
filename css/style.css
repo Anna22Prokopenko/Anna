@@ -50,7 +50,7 @@ body {
 	padding: 5px;
 }
 .logo a{
-	transition: background 0.3s ease-in-out;
+	transition: background 0.2s ease-in-out;
 	height: 73px;
 	width: 183px;
 	display: block;
@@ -684,12 +684,14 @@ td {
 	margin-top: -50px;	
 }
 .adminContent input {
-	width: 100px;
-	margin-right: 10px;
+	width: 95px;
+	height: 23px;
+	margin-right: 8px;
+	margin-top: 20px;
 	border: 2px solid rgba(97,98,103,0.5);
 	border-radius: 6px;
     transition: all 0.4s ease-out;
-	padding-left: 5px;
+	padding-left: 8px;
 	box-shadow: 
     inset 0 1px 0 rgba(0,0,0,.2), 
     0 0 4px rgba(0,125,182,0.3);
@@ -700,22 +702,27 @@ td {
 	background: rgba(0,125,182,0.1);
 }
 .adminContent .discount {
-	font-size: 20px;
+	font-size: 25px;
 	color: #007db6;
 }
 .adminContent fieldset {
-	margin-top: 40px;
+	margin: 20px 10px 20px 10px;
 	border: 2px solid rgba(0,125,182,0.5);
+	height: 283px;
+	
 }
 .adminContent .button {
 	width: 100%;
-	height: 30px;
+	height: 37px;
+	font-size: 20px;
+	color: #007db6;
 	margin-top: 20px;
 	box-shadow: 0 2px 4px rgba(0,125,182,0.4);
 	transition: all 0.2s ease-out;
 } 
 .adminContent .button:hover {
-	color: #007db6;
+	background: rgba(17, 174, 235, 0.46);
+	color: #fdfdfd;
 }
 .adminContent .button:active {
 	position: relative;
